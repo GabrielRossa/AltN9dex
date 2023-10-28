@@ -1,0 +1,15 @@
+/* The component style is inserted here. */
+#play-button {
+
+    visibility: hidden;
+}
+
+#play-button.active{
+    transition: .2s;
+    visibility: visible;
+    cursor: pointer;
+}
+
+#play-button.active:hover {
+    transform: scale(1.2);
+}

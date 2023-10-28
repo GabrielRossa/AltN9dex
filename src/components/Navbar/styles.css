@@ -1,0 +1,82 @@
+/* The component style is inserted here. */
+
+/* NAVBAR SEM ESTAR COLAPSADA */
+#navbar{
+    transition: .3s;
+}
+
+#navbar .link{
+    width: 5rem;
+}
+
+#navbar .link p{
+    transition: .2s;
+}
+
+#navbar .link:hover p{
+    transform: scale(1.2);
+    color: white;
+}
+
+#navbar #logo{
+    transition: .2s;
+}
+
+#navbar #logo:hover{
+    transform: scale(1.2);
+    color: white;
+}
+
+/* NAVBAR COLAPSADA */
+
+#navbar.collapsed{
+    height: .5rem;
+}
+
+#navbar.collapsed .link{
+    background-color: white;
+    border-radius: 2rem;
+
+    transition: .1s;
+
+    opacity: .3;
+}
+
+#navbar.collapsed .link p{
+    transition: .3s;
+    
+    font-size: 1px;
+    height: .5rem;
+}
+
+#navbar.collapsed .link:hover{
+    background-color: transparent;
+    border-radius: 0rem;
+    color: white;
+
+    opacity: 1;
+}
+
+#navbar.collapsed .link:hover p{
+    font-size: 1rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 6rem;
+    transform: translateY(3rem);
+}
+
+#navbar.collapsed #logo{
+    transform: rotate(180deg);
+    height: 1.5rem;
+
+    opacity: .3;
+}
+
+#navbar.collapsed #logo:hover{
+    height: 2.2rem;
+
+    opacity: 1;
+}

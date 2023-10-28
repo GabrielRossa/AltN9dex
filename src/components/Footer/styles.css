@@ -1,0 +1,9 @@
+/* The component style is inserted here. */
+.link{
+    transition: .3s;
+}
+
+.link:hover{
+    transform: scale(1.1);
+    color: white;
+}

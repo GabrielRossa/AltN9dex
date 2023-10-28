@@ -1,0 +1,95 @@
+/* -------------------------------------------------------------------- COMMON*/
+#tk-wrapper{
+    transform: scale(0.6);
+}
+
+.sq-card{
+    transition: .3s;
+}
+
+.sq-card:hover{
+    transform: scale(120%);
+}
+
+#pack-tk{
+    transition: .3s;
+    transform: translateY(5rem);
+}
+
+.sq-card:hover #pack-tk{
+    transform: scale(0.8) translateY(5rem);
+}
+
+.sq-card #pack-tk .tk{
+    transition: .3s;
+}
+
+
+/* -------------------------------------------------------------------- TK ANIMATION PENTAKILL*/
+
+.sq-card:hover #pack-tk.Pentakill #tk5{
+    transform: rotate(30deg) translate(16rem, -1rem);
+}
+
+.sq-card:hover #pack-tk.Pentakill #tk4{
+    transform: rotate(15deg) translate(8rem, .5rem);
+}
+
+.sq-card:hover #pack-tk.Pentakill #tk3{
+    transform: rotate(-30deg) translate(-16rem, -1rem);
+}
+
+.sq-card:hover #pack-tk.Pentakill #tk2{
+    transform: rotate(-15deg) translate(-8rem, .5rem);
+}
+
+.sq-card:hover #pack-tk.Pentakill #tk1{
+    transform: rotate(0deg);
+}
+
+.sq-card #pack-tk .icon{
+    transition: .3s;
+}
+
+.sq-card:hover #pack-tk.Pentakill #bonus{
+    transform: translateY(-4rem) scale(1.5);
+}
+
+/*  -------------------------------------------------------------------- TK ANIMATION PREMIUM */
+.sq-card:hover #pack-tk.Premium{
+transform: translateY(3.5rem);
+}
+
+.sq-card:hover #pack-tk.Premium #tk5{
+    transform: translate(-3rem, 2rem);
+}
+
+.sq-card:hover #pack-tk.Premium #tk4{
+    transform: translate(-2.25rem, 1.5rem);
+}
+
+.sq-card:hover #pack-tk.Premium #tk3{
+    transform: translate(-1.5rem, 1rem);
+}
+
+.sq-card:hover #pack-tk.Premium #tk2{
+    transform: translate(-.75rem, .5rem);
+}
+
+.sq-card:hover #pack-tk.Premium #tk1{
+    transform: rotate(0deg);
+}
+
+.sq-card #pack-tk .icon{
+    transition: .3s;
+}
+
+.sq-card #pack-tk.Premium #clock{
+    z-index: 999;
+    transform: scale(0) translateY(10rem);
+    filter: invert();
+}
+
+.sq-card:hover #pack-tk.Premium #clock{
+    transform: scale(2) translateY(3rem);
+}
