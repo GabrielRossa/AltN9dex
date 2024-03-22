@@ -1,25 +1,14 @@
 import React from 'react';
-
 import './styles.css';
-import { Tiktoks } from './../Tiktoks/index';
 
-export const SquareCard = ({ cardBg, title, type, desc }) => {
-  const styleCard = {
-    width: '31rem',
-    height: '30rem'
-  }
-
+export const SquareCard = ({ cardBg, number, title, desc }) => {
   return (
-    <div className={`${title} sq-card`} style={styleCard}>
-      <div className='h-1/2 w-full' style={{ background: `url(${cardBg}), no-repeat` }}>
-        <div id='tk-wrapper'>
-          <Tiktoks type={title} />
-        </div>
-      </div>
-      <div className='h-1/2 flex flex-col justify-center items-center'>
-        <p className='font-bold text-sm mb-4'>{type}</p>
-        <h3 className='text-3xl font-bold mb-8' style={{ fontFamily: 'Times New Roman, serif' }}>{title}</h3>
-        <p className='w-3/5 text-center'>{desc}</p>
+    <div id='square' className={`${title} sq-card relative`} style={{ width: '18rem', height: '18rem' }}>
+      <div className='z-0 w-full h-full opacity-50' style={{ background: `url(${cardBg}) no-repeat`, backgroundSize: 'contain' }}></div>
+      <div id='card-content' className='z-10 flex flex-col justify-center items-center absolute top-0 w-full h-full items-center justify-center'>
+        <p id='number' className=' text-9xl opacity-25' style={{ fontFamily: 'Times New Roman, serif' }}>{number}</p>
+        <h3 id='phase' className='text-3xl font-bold absolute'>{title}</h3>
+        <p id='desc' className='w-4/5 opacity-0 text-center absolute'>{desc}</p>
       </div>
     </div>
   );

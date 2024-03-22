@@ -20,6 +20,7 @@
 
 #navbar #logo{
     transition: .2s;
+    
 }
 
 #navbar #logo:hover{
@@ -69,14 +70,14 @@
 }
 
 #navbar.collapsed #logo{
-    transform: rotate(180deg);
-    height: 1.5rem;
+    transform: rotate(180deg) translateY(2rem);
+    height: 4rem;
 
     opacity: .3;
 }
 
 #navbar.collapsed #logo:hover{
-    height: 2.2rem;
+    height: 4.75rem;
 
     opacity: 1;
 }

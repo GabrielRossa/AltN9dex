@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
-import Logo from '../../assets/logo-alt-site.svg';
+import Logo from '../../assets/hokaiz-logo.svg';
 import './styles.css';
 
 export const Navbar = ({ forceCollapse }) => {
@@ -13,7 +13,7 @@ export const Navbar = ({ forceCollapse }) => {
 
       if (scrollPos > 20) {
         setCollapsed(true);
-      } else if (scrollPos <=20 && !forceCollapse) {
+      } else if (scrollPos <= 20 && !forceCollapse) {
         setCollapsed(false);
       }
     };
@@ -37,15 +37,17 @@ export const Navbar = ({ forceCollapse }) => {
   return (
     <section
       id='navbar'
-      className={`fixed top-0 z-50 flex w-2/3 justify-between h-32 items-center ${collapsed ? "collapsed" : ""}`}
+      className={`fixed top-0 z-50 flex w-screen justify-center h-32 items-center ${collapsed ? "collapsed" : ""}`}
     >
-      <Link className='text-center text-white link'><p>ABOUT</p></Link>
-      <Link className='text-center text-white link'><p>EXPLORE</p></Link>
-      <Link id='logo' to="/">
-        <img src={Logo} alt="Logo AltN9dex Website" />
-      </Link>
-      <Link className='text-center text-white link'><p>PACKAGES</p></Link>
-      <Link className='text-center text-white link'><p>CONTACT</p></Link>
+      <div className='flex justify-between items-center' style={{width: '60rem'}}>
+        <Link className='text-center text-white link' to="/about"><p>SOBRE</p></Link>
+        <Link className='text-center text-white link' to={"/explore"}><p>EXPLORE</p></Link>
+        <Link id='logo' to="/">
+          <img src={Logo} alt="Logo AltN9dex Website" style={{ height: '4.5rem', transform: 'translateY(-.75rem)' }} />
+        </Link>
+        <Link className='text-center text-white link'><p>SKILLS</p></Link>
+        <Link className='text-center text-white link'><p>CONTATO</p></Link>
+      </div>
     </section>
   );
 };

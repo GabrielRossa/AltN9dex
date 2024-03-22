@@ -1,1 +1,16 @@
 /* The component style is inserted here. */
+h3{
+    transition: .3s;
+}
+
+#vertical:hover h3{
+    transform: translateY(-2rem);
+}
+
+p{
+    transition: .3s;
+}
+
+#vertical:hover p{
+    opacity: 1;
+}

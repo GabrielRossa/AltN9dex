@@ -1,16 +1,15 @@
 import React from 'react'
 import { Presentation } from '../../components/Presentation'
 import { ExploreSection } from '../../components/ExploreSection/index';
-import { PackageSection } from '../../components/PackageSection/index';
+import { ProcessSection } from '../../components/ProcessSection/index';
 import { FinalSection } from '../../components/FinalSection';
-import { Tiktoks } from './../../components/Tiktoks/index';
 
 export const Home = () => {
   return (
-    <div>
+    <div className='overflow-y-hidden w-screen'>
       <Presentation />
       <ExploreSection />
-      <PackageSection />
+      <ProcessSection />
       <FinalSection />
     </div>
   )

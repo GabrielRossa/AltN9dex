@@ -3,12 +3,22 @@ import ReactDOM from 'react-dom/client'
 import './index.css'
 import { RouterProvider, createBrowserRouter } from 'react-router-dom'
 import { Home } from './pages/home/home'
+import { About } from './pages/about'
+import { Explore } from './pages/Explore'
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Home/>
   },
+  {
+    path: "/about",
+    element: <About/>
+  },
+  {
+    path: "/explore",
+    element: <Explore/>
+  }
 ])
 
 ReactDOM.createRoot(document.getElementById('root')).render(
