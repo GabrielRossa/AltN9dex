@@ -35,82 +35,142 @@ import mase3 from '../../assets/explore/mase-3.png'
 import mase4 from '../../assets/explore/mase-4.png'
 import mase5 from '../../assets/explore/mase-5.png'
 import mase6 from '../../assets/explore/mase-6.png'
+import { Footer } from './../../components/Footer/index';
 
 export const Explore = () => {
     return (
-        <div className='overflow-y-hidden w-screen justify-center'>
+        <div className='overflow-y-hidden w-screen justify-center relative'>
             <Navbar />
-            <section id='images' className='flex gap-4 flex-col justify-center items-center w-fit mt-32 m-auto'>
-                <div id='ferrari-458' className='flex gap-4 h-fit'>
-                    <img src={ferrari1} alt="" style={{height: '41.25rem'}}/>
-                    <div className='flex flex-col gap-4 ' style={{width: '13.4375rem'}}>
-                        <img src={ferrari2} alt="" />
-                        <img src={ferrari3} alt="" />
+            <section id='images' className='flex gap-4 flex-col justify-center items-center w-fit mt-32 mb-16 m-auto'>
+                <div id='ferrari-458' className='flex lg:flex-row flex-col gap-4 h-fit'>
+                    <div id='ferrari1' className='car-img' alt="">
+                        <img src={ferrari1} alt="" className='w-full' />
                     </div>
-                    <div className='flex flex-col gap-4' style={{width: '18.75rem'}}>
-                        <img src={ferrari4} alt="" />
-                        <img src={ferrari5} alt="" />
+                    <div className='flex lg:flex-col gap-4 '>
+                        <div id='ferrari2' className='car-img' alt="">
+                            <img src={ferrari2} alt="" className='h-full' />
+                        </div>
+                        <div id='ferrari3' className='car-img' alt="">
+                            <img src={ferrari3} alt="" className='w-full' />
+                        </div>
+                    </div>
+                    <div className='flex flex-col gap-4'>
+                        <div id='ferrari4' className='car-img' alt="">
+                            <img src={ferrari4} alt="" className='w-full' />
+                        </div>
+                        <div id='ferrari5' className='car-img' alt="">
+                            <img src={ferrari5} alt="" className='w-full' />
+                        </div>
                     </div>
                 </div>
 
-                <div id='dodge' className='flex gap-4'>
-                    <div className='flex flex-col gap-4' style={{width: '33.125rem'}}>
-                        <img src={dodge1} alt="" />
-                        <img src={dodge2} alt="" />
+                <div id='dodge' className='flex lg:flex-row flex-col gap-4'>
+                    <div className='flex flex-col gap-4' >
+                        <div id='dodge1' className='car-img' alt="">
+                            <img src={dodge1} alt="" className='w-full' />
+                        </div>
+                        <div id='dodge2' className='car-img' alt="">
+                            <img src={dodge2} alt="" className='w-full' />
+                        </div>
                     </div>
-                    <img src={dodge3} alt="" style={{width: '27.5rem'}}/>
+                    <div id='dodge3' className='car-img' alt="">
+                        <img src={dodge3} alt="" className='w-full' />
+                    </div>
                 </div>
 
-                <div id="bmw" className='flex gap-4'>
-                    <img src={bmw1} alt="" className='h-auto' style={{width: '29.875rem'}}/>
+                <div id="bmw" className='lg:flex-row flex-col flex gap-4'>
+                    <div id='bm1' className='car-img' alt=""  >
+                        <img src={bmw1} alt="" className='w-full' />
+                    </div>
                     <div className='flex-col flex gap-4'>
                         <div className='flex gap-4 w-fit h-fit'>
-                            <img src={bmw2} alt="" style={{height: '16.125rem'}}/>
-                            <img src={bmw3} alt="" style={{height: '16.125rem'}}/>
+                            <div id='bm2' className='car-img' alt=""  >
+                                <img src={bmw2} alt="" className='w-full' />
+                            </div>
+                            <div id='bm3' className='car-img' alt=""  >
+                                <img src={bmw3} alt="" className='w-full' />
+                            </div>
                         </div>
-                        <img src={bmw4} alt="" style={{width: '30.75rem'}}/>
+                        <div id='bm4' className='car-img' alt=""  >
+                            <img src={bmw4} alt="" className='w-full' />
+                        </div>
                     </div>
                 </div>
 
-                <div id="m8" className='flex gap-4'>
-                    <div className='flex-col flex gap-4' style={{width: '18.6875rem'}}>
-                        <img src={m81} alt="" />
-                        <img src={m82} alt="" />
+                <div id="m8" className='lg:flex-row flex flex-col gap-4'>
+                    <div className='flex-col flex gap-4' >
+                        <div id='m81' className='car-img' alt="" >
+                            <img src={m81} alt="" className='w-full' />
+                        </div>
+                        <div id='m82' className='car-img' alt="">
+                            <img src={m82} alt="" className='w-full' />
+                        </div>
                     </div>
-                    <div className='flex flex-col gap-4' style={{width: '13.5rem'}}>
-                        <img src={m83} alt="" />
-                        <img src={m84} alt="" />
+                    <div className='flex flex-col gap-4' >
+                        <div id='m83' className='car-img' alt="" >
+                            <img src={m83} alt="" className='w-full' />
+                        </div>
+                        <div id='m84' className='car-img' alt="" >
+                            <img src={m84} alt="" className='w-full' />
+                        </div>
                     </div>
-                    <img src={m85} alt="" style={{width: '27.5rem'}}/>
+                    <div id='m85' className='car-img' alt="" >
+                        <img src={m85} alt="" className='w-full' />
+                    </div>
                 </div>
 
-                <div id="multi" className='flex gap-4'>
-                    <div className='flex flex-col gap-4' style={{width: '13.5rem'}}>
-                        <img src={multi1} alt="" />
-                        <img src={multi2} alt="" />
+                <div id="multi" className='lg:flex-row flex flex-col gap-4'>
+                    <div className='flex flex-col gap-4' >
+                        <div id='multi1' className='car-img' alt="">
+                            <img src={multi1} alt="" className='w-full' />
+                        </div>
+                        <div id='multi2' className='car-img' alt="">
+                            <img src={multi2} alt="" className='w-full' />
+                        </div>
                     </div>
-                    <img src={multi3} alt="" style={{width: '27.5rem'}}/>
-                    <div className='flex flex-col gap-4' style={{width: '18.6875rem'}}>
-                        <img src={multi4} alt="" />
-                        <img src={multi5} alt="" />
+                    <div id='multi3' className='car-img' alt="">
+                        <img src={multi3} alt="" className='w-full' />
+                    </div>
+                    <div className='flex flex-col gap-4' >
+                        <div id='multi4' className='car-img' alt="">
+                            <img src={multi4} alt="" className='w-full' />
+                        </div>
+                        <div id='multi5' className='car-img' alt="">
+                            <img src={multi5} alt="" className='w-full' />
+                        </div>
                     </div>
                 </div>
 
                 <div id="maserati" className='flex flex-col gap-4'>
-                    <div className='flex gap-4'>
-                        <img src={mase1} alt="" style={{width: '21.25rem'}}/>
-                        <div className='flex flex-col gap-4'>
-                            <img src={mase2} alt="" style={{width: '17.1875rem'}}/>
-                            <img src={mase3} alt="" style={{width: '17.1875rem'}}/>
+                    <div className='lg:flex-row flex flex-col gap-4'>
+                        <div id='mase1' className='car-img' alt="">
+                            <img src={mase1} alt="" className='w-full' />
                         </div>
-                        <img src={mase4} alt="" style={{width: '21.25rem'}}/>
+                        <div className='flex flex-col gap-4'>
+                            <div id='mase2' className='car-img' alt="">
+                                <img src={mase2} alt="" className='w-full' />
+                            </div>
+                            <div id='mase3' className='car-img' alt="">
+                                <img src={mase3} alt="" className='w-full' />
+                            </div>
+                        </div>
+                        <div id='mase4' className='car-img' alt="">
+                            <img src={mase4} alt="" className='w-full' />
+                        </div>
                     </div>
-                    <div className='flex gap-4'>
-                        <img src={mase5} alt="" style={{width: '30.375rem'}}/>
-                        <img src={mase6} alt="" style={{width: '30.375rem'}}/>
+                    <div className='lg:flex-row flex flex-col gap-4'>
+                        <div id='mase5' className='car-img' alt="">
+                            <img src={mase5} alt="" className='w-full' />
+                        </div>
+                        <div id='mase6' className='car-img' alt="">
+                            <img src={mase6} alt="" className='w-full' />
+                        </div>
                     </div>
                 </div>
             </section>
+
+            <Footer />
+            <div className='h-4 w-screen'></div>
         </div>
     )
 }

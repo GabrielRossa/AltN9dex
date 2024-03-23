@@ -1,0 +1,24 @@
+
+#text{
+    width: 20rem;
+}
+
+#hokaiz-logo{
+    width: 14rem;
+}
+
+@media (min-width: 1024px) {
+    #hokaiz-logo{
+        width: 25rem;
+    }
+}
+
+@media (min-width: 640px) {
+    #text{
+        width: 36rem;
+    }
+    
+    #hokaiz-logo{
+        width: 14rem;
+    }
+}

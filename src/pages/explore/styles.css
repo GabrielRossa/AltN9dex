@@ -5,3 +5,245 @@
 #images img:hover{
     transform: scale(1.05);
 }
+
+.car-img{
+    overflow-y: hidden;
+}
+
+#ferrari1{
+    width: 20rem;
+    height: 30rem;
+}
+#ferrari2{
+    width: 9.53125rem;
+    height: 15rem;
+}
+#ferrari3{
+    width: 9.53125rem;
+    height: 15rem;
+}
+#ferrari4{
+    width: 20rem;
+    height: 28.125rem;
+}
+#ferrari5{
+    width: 20rem;
+    height: 13rem;
+}
+
+#dodge1{
+    width: 20rem;
+    height: 14rem;
+}
+#dodge2{
+    width: 20rem;
+    height: 10rem;
+}
+#dodge3{
+    width: 20rem;
+    height: 30rem;
+}
+
+#bm1{
+    width: 20rem;
+    height: 30rem;
+}
+#bm2{
+    width: 12rem;
+    height: 10.5rem;
+}
+#bm3{
+    width: 7.0625rem;
+    height: 10.5rem;
+}
+#bm4{
+    width: 20rem;
+    height: 19rem;
+}
+
+#m81{
+    width: 20rem;
+    height: 30rem;
+}
+#m82{
+    width: 20rem;
+    height: 13rem;
+}
+#m83{
+    width: 20rem;
+    height: 30rem;
+}
+#m84{
+    width: 20rem;
+    height: 30rem;
+}
+#m85{
+    width: 20rem;
+    height: 30rem;
+}
+
+#multi1{
+    width: 20rem;
+    height: 30rem;
+}
+#multi2{
+    width: 20rem;
+    height: 30rem;
+}
+#multi3{
+    width: 20rem;
+    height: 30rem;
+}
+#multi4{
+    width: 20rem;
+    height: 13rem;
+}
+#multi5{
+    width: 20rem;
+    height: 30rem;
+}
+
+#mase1{
+    width: 20rem;
+    height: 30rem;
+}
+#mase2{
+    width: 20rem;
+    height: 20rem;
+}
+#mase3{
+    width: 20rem;
+    height: 15rem;
+}
+#mase4{
+    width: 20rem;
+    height: 30rem;
+}
+#mase5{
+    width: 20rem;
+    height: 30rem;
+}
+#mase6{
+    width: 20rem;
+    height: 30rem;
+}
+
+@media (min-width: 1024px){
+    #ferrari1{
+        width: 27.5rem;
+        height: 41.25rem;
+    }
+    #ferrari2{
+        width: 13.4375rem;
+        height: 20.125rem;
+    }
+    #ferrari3{
+        width: 13.4375rem;
+        height: 20.1875rem;
+    }
+    #ferrari4{
+        width: 18.75rem;
+        height: 28.125rem;
+    }
+    #ferrari5{
+        width: 18.75rem;
+        height: 12.1875rem;
+    }
+    
+    #dodge1{
+        width: 33.125rem;
+        height: 23.75rem;
+    }
+    #dodge2{
+        width: 33.125rem;
+        height: 16.5625rem;
+    }
+    #dodge3{
+        width: 27.5rem;
+        height: 41.25rem;
+    }
+    
+    #bm1{
+        width: 29.875rem;
+        height: 44.8125rem;
+    }
+    #bm2{
+        width: 18.625rem;
+        height: 16.125rem;
+    }
+    #bm3{
+        width: 11.1875rem;
+        height: 16.125rem;
+    }
+    #bm4{
+        width: 30.75rem;
+        height: 27.6875rem;
+    }
+    
+    #m81{
+        width: 18.75rem;
+        height: 28.25rem;
+    }
+    #m82{
+        width: 18.75rem;
+        height: 12.25rem;
+    }
+    #m83{
+        width: 13.5rem;
+        height: 20.0625rem;
+    }
+    #m84{
+        width: 13.5rem;
+        height: 20.25rem;
+    }
+    #m85{
+        width: 27.5rem;
+        height: 41.25rem;
+    }
+    
+    #multi1{
+        width: 13.5rem;
+        height: 20.0625rem;
+    }
+    #multi2{
+        width: 13.5rem;
+        height: 20.25rem;
+    }
+    #multi3{
+        width: 27.5rem;
+        height: 41.25rem;
+    }
+    #multi4{
+        width: 18.75rem;
+        height: 12.375rem;
+    }
+    #multi5{
+        width: 18.75rem;
+        height: 27.9375rem;
+    }
+    
+    #mase1{
+        width: 21.25rem;
+        height: 31.8125rem;
+    }
+    #mase2{
+        width: 17.1875rem;
+        height: 17.4375rem;
+    }
+    #mase3{
+        width: 17.1875rem;
+        height: 13.4375rem;
+    }
+    #mase4{
+        width: 21.25rem;
+        height: 31.8125rem;
+    }
+    #mase5{
+        width: 30.3125rem;
+        height: 45.625rem;
+    }
+    #mase6{
+        width: 30.3125rem;
+        height: 45.625rem;
+    }
+}

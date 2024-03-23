@@ -7,3 +7,22 @@
     transform: scale(1.1);
     color: white;
 }
+
+.side{
+    width: 15rem;
+    color: #FEFEFE;
+}
+
+@media (min-width: 768px) {
+    .side{
+        width: 20rem;
+        color: #FEFEFE;
+    }
+}
+
+@media (min-width: 1024px) {
+    .side{
+        width: 25rem;
+        color: #FEFEFE;
+    }
+}

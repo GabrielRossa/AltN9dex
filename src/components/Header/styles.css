@@ -1,1 +1,11 @@
 /* The component style is inserted here. */
+p{
+    width: 90%;
+}
+
+
+@media (min-width: 1024px){
+    p{
+        width: 42rem
+    }
+}
