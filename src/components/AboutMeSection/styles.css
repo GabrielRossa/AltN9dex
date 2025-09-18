@@ -1,0 +1,18 @@
+/* The component style is inserted here. */
+#container{
+    background-size: cover;
+}
+
+#play-button {
+    visibility: hidden;
+}
+
+#play-button.active{
+    transition: .2s;
+    visibility: visible;
+    cursor: pointer;
+}
+
+#play-button.active:hover {
+    transform: scale(1.2);
+}
